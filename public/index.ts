@@ -6,6 +6,12 @@ import Dots from './vector.svg';
 import Calendar from './calendar.svg';
 import BgCard from './BgCard.svg';
 import Logo from './Logo.svg';
+import Menu1 from './shield.svg';
+import Menu2 from './robot.svg';
+import Menu3 from './menu3.png';
+import Menu4 from './menu4.svg';
+import Menu5 from './menu5.svg';
+import Search from './search.svg';
 
 
 
@@ -18,5 +24,11 @@ export {
   Dots,
   Calendar,
   BgCard,
-  Logo
+  Logo,
+  Menu1,
+  Menu2,
+  Menu3,
+  Menu4,
+  Menu5,
+  Search
 };
