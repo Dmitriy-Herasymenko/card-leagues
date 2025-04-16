@@ -6,8 +6,7 @@ export default function Home() {
     <div className="min-h-screen ">
       <CardList />
 
-   <FloatMenu />
-
+      <FloatMenu />
     </div>
   );
 }
