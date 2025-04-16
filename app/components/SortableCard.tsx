@@ -4,6 +4,16 @@ import Image from "next/image";
 import { getStatusStyles } from "../utils/statusStyles";
 import { Dots, Calendar } from "../../public";
 
+interface Props {
+  id: string;
+  text: string;
+  author: string;
+  year: string;
+  status: string;
+  titleIcon: string;
+  brandLogo: string;
+}
+
 export function SortableCard({
   id,
   text,
@@ -12,15 +22,7 @@ export function SortableCard({
   status,
   titleIcon,
   brandLogo,
-}: {
-  id: string;
-  text: string;
-  author: string;
-  year: string;
-  status: string;
-  titleIcon: string;
-  brandLogo: string;
-}) {
+}: Props) {
   const {
     attributes,
     listeners,
@@ -55,7 +57,9 @@ export function SortableCard({
               <span className="text-[#E5E5DD] font-normal text-base font-normal ">
                 {text}
               </span>
-              <span className={`${getStatusStyles(status)} ml-[8px]`}>{status}</span>
+              <span className={`${getStatusStyles(status)} ml-[8px]`}>
+                {status}
+              </span>
             </div>
             <div className="flex gap-[16px] mt-[16px]">
               <div className="flex gap-[6px]">
